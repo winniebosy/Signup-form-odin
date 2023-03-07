@@ -17,7 +17,48 @@
 
     <main>
         <div class="main-container">
-            <section class="form-container"></section>
+            <section class="form-container">
+                <form action="#" method="post">
+                    <caption>Create an Account</caption>
+                    <div class="form-fname-input">
+                        <label for="fname">First Name (required)</label>
+                        <input type="text" id="fname" name="fname" aria-describedby="fname-error" required>
+                        <p id="fname-error">Field cannot be empty</p>
+                    </div>
+                    <div class="form-lname-input">
+                        <label for="lname">Last Name (required)</label>
+                        <input type="text" id="lname" name="lname" aria-describedby="lname-error" required>
+                        <p id="lname-error">Field cannot be empty</p>
+                    </div>
+                    <div class="form-email">
+                        <label for="email">Email: (required)</label>
+                        <p id="email-format">Email format: janedoe@mail.co</p>
+                        <input type="email" id="email" name="email" aria-describedby="email-format" required>
+                        <p id="email-error">Invalid email address</p>
+                    </div>
+                    <div class="form-grade">
+                        <label for="grade">Grade or Year (required)</label>
+                        <input type="text" id="grade" name="grade" aria-describedby="grade-error" required>
+                        <p id="grade-error">Grade field cannot be empty</p>
+                    </div>
+
+                    <div class="form-password-create">
+                        <label for="password-create">Create password </label>
+                        <input type="password" id="password-create" name="password-create" aria-describedby="password-instruction" required>
+                        <p id="password-instruction">Password must be at least six characters</p>
+                    </div>
+                    <div class="form-password-confirm">
+                        <label for="password-confirm">Confirm </label>
+                        <input type="password" id="password-confirm" name="password-confirm" required aria-describedby="password-confirm-instruct">
+                        <p id="password-confirm-instruct">Password does not match</p>
+                    </div>
+
+                    <div class="form-submit">
+                        <button class="btn" type="submit">Sign Up</button>
+                        <p>Already have an account? <a href="#">Sign In</a></p>
+                    </div>
+                </form>
+            </section>
             <section class="img-container"></section>
         </div>
 
