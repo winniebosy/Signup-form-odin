@@ -1,0 +1,35 @@
+:root {
+    --main-backgroundColor: #fcfcfc;
+}
+
+::before,
+ ::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-backgroundColor);
+}
+
+.main-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-container {
+    border: 2px solid green;
+    flex: 50%;
+}
+
+.img-container {
+    border: 2px solid yellow;
+    background-image: url(resources/read-out-7371170_1920.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 50%;
+}
