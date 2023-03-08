@@ -38,8 +38,12 @@ main {
     flex: 50%;
 }
 
-#form-header {
+.form-header {
     border: 2px solid red;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
 }
 
 .img-container {
