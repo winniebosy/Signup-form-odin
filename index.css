@@ -11,6 +11,17 @@
 }
 
 body {
+    background-color: #000000e6;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main {
     background-color: var(--main-backgroundColor);
 }
 
@@ -19,11 +30,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 500px;
 }
 
 .form-container {
     border: 2px solid green;
     flex: 50%;
+}
+
+#form-header {
+    border: 2px solid red;
 }
 
 .img-container {
@@ -32,4 +48,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     flex: 50%;
+}
+
+footer {
+    color: #fcfcfc;
+    text-align: center;
 }
