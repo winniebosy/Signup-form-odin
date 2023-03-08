@@ -23,7 +23,7 @@
                     <div class="form-fname-input">
                         <label for="fname">First Name (required)</label>
                         <input type="text" id="fname" name="fname" aria-describedby="fname-error" required>
-                        <p id="fname-error">Field cannot be empty</p>
+                        <p id="fname-error" class="fname-error">Field cannot be empty</p>
                     </div>
                     <div class="form-lname-input">
                         <label for="lname">Last Name (required)</label>
@@ -32,13 +32,13 @@
                     </div>
                     <div class="form-email">
                         <label for="email">Email: (required)</label>
-                        <p id="email-format">Email format: janedoe@mail.co</p>
+                        <p id="email-format" class="email-format">Email format: janedoe@mail.co</p>
                         <input type="email" id="email" name="email" aria-describedby="email-format" required>
                         <p id="email-error">Invalid email address</p>
                     </div>
                     <div class="form-grade">
                         <label for="grade">Grade or Year (required)</label>
-                        <input type="text" id="grade" name="grade" aria-describedby="grade-error" required>
+                        <input type="text" id="grade" name="grade" minaria-describedby="grade-error" required>
                         <p id="grade-error">Grade field cannot be empty</p>
                     </div>
 
@@ -55,7 +55,7 @@
 
                     <div class="form-submit">
                         <button class="btn" type="submit">Sign Up</button>
-                        <p>Already have an account? <a href="#">Sign In</a></p>
+                        <p class="form-signin">Already have an account? <a href="#">Sign In</a></p>
                     </div>
                 </form>
             </section>

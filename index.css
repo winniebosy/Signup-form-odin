@@ -26,20 +26,19 @@ main {
 }
 
 .main-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 500px;
+    height: auto;
 }
 
 .form-container {
-    border: 2px solid green;
     flex: 50%;
+    margin-right: 0.2rem;
+    box-shadow: 2px 2px 2px #999999;
 }
 
 .form-header {
-    border: 2px solid red;
     font-size: 1.3rem;
     padding: 1rem;
     margin: 0 1rem 1rem 1rem;
@@ -47,14 +46,73 @@ main {
 }
 
 .img-container {
-    border: 2px solid yellow;
     background-image: url(resources/read-out-7371170_1920.png);
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     flex: 50%;
+}
+
+.form-fname-input,
+.form-lname-input,
+.form-email,
+.form-grade,
+.form-password-create,
+.form-password-confirm,
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+label {
+    margin: 0 0 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.3rem 1rem;
+}
+
+.fname-error,
+.email-format {
+    margin: 0.2rem;
+}
+
+.btn {
+    width: 40%;
+    margin: auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #B18981;
+}
+
+.form-signin {
+    margin: 0.5rem;
+    text-align: center;
 }
 
 footer {
     color: #fcfcfc;
     text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    header {
+        padding: 3rem;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url(resources/read-out-7371170_1920.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40%;
+    }
 }
